@@ -1,0 +1,9 @@
+<div class="container">
+  <header>AWW Subreddit</header>
+  <div class="post" *ngFor="let post of data.data.children | slice:0:10">
+    {{ post.data.title }}
+    <a href="{{ post.data.url }}">
+      <img src="{{ post.data.thumbnail }}" />
+    </a>
+  </div>
+</div>
